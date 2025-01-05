@@ -34,10 +34,10 @@ const Header = () => {
         <a
           className={`${
             isScrolled ? 'text-primary-400' : 'text-white'
-          } text-500 font-500`}
+          } text-400 font-700`}
           href="/"
         >
-          Zest
+          Marshall
         </a>
 
         <Nav isOpen={isOpen} />

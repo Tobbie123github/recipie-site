@@ -36,8 +36,8 @@ const Nav = ({ isOpen }) => {
       </nav>
 
       {/* Desktop */}
-      <nav className="hidden md:block">
-        <ul className="flex items-center space-x-8">
+      <nav className="hidden  md:block">
+        <ul className="flex items-center justify-center  space-x-8 h-16">
           {navigation.map((item, index) => (
             <li key={index} className="text-200 mb-4 capitalize text-white">
               <NavLink

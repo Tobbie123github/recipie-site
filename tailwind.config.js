@@ -9,7 +9,7 @@ export default {
     extend: {
       colors: {
         primary: {
-          400: '#ED1B24',
+          400: '#dd7230',
         },
         gray: {
           100: '#F3F3F3',

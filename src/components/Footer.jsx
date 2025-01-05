@@ -3,7 +3,7 @@ const Footer = () => {
     <footer>
       <hr className="text-gray-100" />
       <p className="p-8 text-center">
-        Copyright {new Date().getFullYear()} - Zest
+        Copyright {new Date().getFullYear()} - Marshall
       </p>
     </footer>
   );
