@@ -14,23 +14,20 @@ const Recipe = ({ recipe, onToggle, isLiked }) => {
         />
       </button>
 
-      <Link to={`/recipe/${recipe.id}`}>
-        <img
-          src={recipe.image}
-          alt={recipe.title}
-          className="h-48 w-full rounded-t-lg object-cover"
-        />
-
-        <div className="p-4">
-          <h2 className="text-400 font-600">{recipe.title}</h2>
-          <div className="flex mt-2 items-center text-sm text-gray-600">
-            <span className="mr-4">{recipe.time}</span>
-            <span>{recipe.difficulty}</span>
-          </div>
-
-          <p className="text-200 mt-2">{recipe.description}</p>
-        </div>
-      </Link>
+      <Link onClick={() => onToggle(recipe.id)}>
+  <img
+    src={recipe.image}
+    alt={recipe.title}
+    className="h-48 w-full rounded-t-lg object-cover"
+  />
+  <div className="p-4">
+    <h2 className="text-400 font-600">{recipe.title}</h2>
+    <div className="flex mt-2 items-center text-sm text-gray-600">
+      <span className="mr-4">{recipe.time}</span>
+      <span>{recipe.difficulty}</span>
+    </div>
+  </div>
+</Link>
     </div>
   );
 };
